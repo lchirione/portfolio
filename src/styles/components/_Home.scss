@@ -1,0 +1,395 @@
+.home__container {
+  position: relative;
+  color: $grey;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+
+  nav {
+    padding: 1rem;
+    h3 {
+      font-size: 80%;
+      color: $fuschia;
+    }
+  }
+}
+
+.home__links-social {
+  position: absolute;
+  right: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  z-index: 2;
+
+  .home__links-social-networks {
+    width: 50px;
+    height: 50px;
+    background-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: darken($fuschia, 10);
+    }
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: $grey;
+    }
+  }
+}
+
+.home__container-elements {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 70vh; */
+  flex-direction: column;
+}
+
+.home__title {
+  font-size: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+
+  span {
+    color: $fuschia;
+  }
+}
+
+.home__button-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  button {
+    padding: 0.8rem 1.5rem;
+    display: block;
+    border-radius: 30px;
+    color: $grey;
+    background: $blue;
+    margin: 0 0.5rem;
+    border: none;
+    box-shadow: 0 0 5px darken($fuschia, 20);
+    font-weight: 700;
+    font-size: 90%;
+    transition: all 0.3s ease;
+
+    a {
+      text-decoration: none;
+      color: $grey;
+      padding: 0.5rem;
+    }
+
+    &:hover {
+      background-color: darken($fuschia, 10);
+    }
+
+    /* &:hover {
+      box-shadow: 0 0 20px darken($fuschia, 10);
+      background: darken($blue, 10);
+    } */
+  }
+}
+
+.home__img {
+  position: absolute;
+  width: 80%;
+  height: 45%;
+  max-height: 400px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  background-color: $blue;
+  border-start-start-radius: 50% !important;
+  border-start-end-radius: 50% !important;
+  padding: 0.5rem;
+
+  .home__circle {
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0 auto !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 350px;
+    }
+  }
+}
+
+@include mobile {
+  .home__img {
+    width: 70% !important;
+    max-width: 300px !important;
+    height: 250px !important;
+    border-start-start-radius: 50% !important;
+    border-start-end-radius: 50% !important;
+
+    .home__circle {
+      width: 60%;
+      max-width: 250px;
+    }
+  }
+}
+
+@include tablet-horizontal {
+  nav {
+    h3 {
+      font-size: 1rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 1rem !important;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 1.2rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .home__img {
+    width: 70% !important;
+    max-width: 350px;
+    height: 45%;
+    max-height: 500px !important;
+
+    .home__circle {
+      width: 70% !important;
+      max-width: 350px;
+    }
+  }
+}
+
+@include tablet {
+  nav {
+    h3 {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 2rem !important;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 2.5rem;
+      padding: 1rem 2.5rem;
+    }
+  }
+
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 70px !important;
+      height: 70px !important;
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .home__img {
+    width: 90% !important;
+    max-width: 720px !important;
+    height: 50% !important;
+    max-height: 550px !important;
+
+    .home__circle {
+      width: 70% !important;
+      max-width: 420px;
+    }
+  }
+}
+
+@include laptop {
+  nav {
+    h3 {
+      font-size: 1rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 1.1rem !important;
+    margin-top: -2rem;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 1rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  /* .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 90px;
+      height: 90px;
+      a {
+        font-size: 2rem;
+      }
+    }
+  } */
+
+  .home__img {
+    width: 55% !important;
+    max-width: 320px;
+    height: 50%;
+    max-height: 420px !important;
+
+    .home__circle {
+      width: 60% !important;
+      max-width: 380px;
+    }
+  }
+}
+
+@include laptop-middle {
+  nav {
+    h3 {
+      font-size: 1.4rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 1.4rem !important;
+    margin-top: -2rem;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 1.3rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .home__img {
+    width: 55% !important;
+    max-width: 500px !important;
+    height: 50% !important;
+    max-height: 550px !important;
+
+    .home__circle {
+      width: 60% !important;
+      max-width: 380px;
+    }
+  }
+}
+
+@include desktop {
+  nav {
+    h3 {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 1.6rem !important;
+    margin-top: -2rem;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 2rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .home__links-social {
+    display: flex;
+    right: 2rem;
+
+    .home__links-social-networks {
+      width: 90px;
+      height: 90px;
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .home__img {
+    width: 55% !important;
+    max-width: 500px !important;
+    height: 50% !important;
+    max-height: 550px !important;
+
+    .home__circle {
+      width: 70% !important;
+      max-width: 400px !important;
+    }
+  }
+}
+@include desktop-big {
+  nav {
+    h3 {
+      font-size: 1.8rem !important;
+    }
+  }
+
+  .home__title {
+    font-size: 2rem !important;
+    margin-top: -2rem;
+  }
+
+  .home__button-cv {
+    button {
+      font-size: 2.3rem;
+      padding: 1.5rem 2.5rem;
+      border-radius: 50px;
+    }
+  }
+
+  .home__links-social {
+    display: flex;
+  }
+
+  .home__img {
+    width: 70% !important;
+    max-width: 750px !important;
+    height: 50% !important;
+    max-height: 580px !important;
+
+    .home__circle {
+      width: 90% !important;
+      max-width: 550px !important;
+    }
+  }
+}
