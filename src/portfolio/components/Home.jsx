@@ -42,7 +42,7 @@ export const Home = () => {
         <div className="home__button-cv">
           <button type="">
             <a
-              href="https://drive.google.com/file/d/19MlZbC33YdXBbz0ZyLFe6oICsYgPt7LE/view"
+              href="https://drive.google.com/file/d/1PsJiY6VdVohxhjUcthLqRgakRjqewz4E/view?usp=sharing"
               download="CV-LucasChirione.pdf"
               target="_blank"
             >

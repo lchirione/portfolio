@@ -146,7 +146,7 @@ export const Contact = () => {
             {/*//TODO: cambiar el color al enviar los datos */}
             <button className={valor} onClick={(e) => handleSubmit(e)}>
               {valor != "send" ? (
-                "Enviar"
+                "send"
               ) : (
                 <span>
                   Mensaje enviado<i className="fa-solid fa-paper-plane"></i>
