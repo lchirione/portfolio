@@ -35,7 +35,7 @@ export const Home = () => {
       <div className="home__container-elements animate__animated animate__slideInUp">
         <div className="home__title">
           <h2>
-            Hola, soy <br /> <span>Lucas Chirione</span> <br /> Full Stack Developer
+            Hola, soy <br /> <span>Lucas Chirione</span> <br /> Full Stack Web Developer
           </h2>
         </div>
 
