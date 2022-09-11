@@ -46,7 +46,7 @@ export const Projects = () => {
               <span>Firebase</span>
             </div>
             <div className="projects__buttons">
-              <a href="https://movtrack.net" target="_blank">
+              <a href="https://www.apkmirror.com/apk/jack-palevich/terminal-emulator/terminal-emulator-1-0-70-release/terminal-emulator-1-0-70-android-apk-download/download/?key=9b7ac84dd1052e872755a8b8c3f9e2719a88448f" target="_blank">
                 <i className="fas fa-window-maximize"></i>
               </a>
             </div>
