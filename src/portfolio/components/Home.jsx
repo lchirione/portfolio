@@ -11,8 +11,8 @@ export const Home = () => {
 
       <div className="home__links-social">
         <div className="home__links-social-networks">
-          <a href="https://github.com/lchirione" target="_blank">
-            <i className="fab fa-github"></i>
+          <a href="https://wa.me/5493513512224" target="_blank">
+            <i className="fab fa-brands fa-whatsapp"></i>
           </a>
         </div>
 

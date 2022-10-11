@@ -17,7 +17,7 @@ export const Skills = () => {
           <h3>Tecnologias</h3>
           <div className="section-skills">
             <h4>
-              <i className="fas fa-check-circle"></i> HTML - Javascript - CSS - SASS
+              <i className="fas fa-check-circle"></i> HTML - JavaScript - CSS - SASS
             </h4>
             <h4>
               <i className="fas fa-check-circle"></i> Bootstrap
@@ -26,7 +26,7 @@ export const Skills = () => {
               <i className="fas fa-check-circle"></i> React - Redux - Hooks
             </h4>
             <h4>
-              <i className="fas fa-check-circle"></i> NodeJS - Express
+              <i className="fas fa-check-circle"></i> NodeJS - ExpressJS
             </h4>
             <h4>
               <i className="fas fa-check-circle"></i> Python
@@ -35,7 +35,10 @@ export const Skills = () => {
               <i className="fas fa-check-circle"></i> WordPress - WooCommerce
             </h4>
             <h4>
-              <i className="fas fa-check-circle"></i> Git - GitHub
+              <i className="fas fa-check-circle"></i> Git
+            </h4>
+            <h4>
+              <i className="fas fa-check-circle"></i> GitHub
             </h4>
           </div>
         </section>
@@ -51,7 +54,7 @@ export const Skills = () => {
             </h4>
             <h3>Base de datos</h3>
             <h4>
-              <i className="fas fa-check-circle"></i> MySQL
+              <i className="fas fa-check-circle"></i> SQL
             </h4>
             <h4>
               <i className="fas fa-check-circle"></i> Mongodb
